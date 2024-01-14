@@ -7,7 +7,7 @@
 
 	const calculatePossibilities = async () => {
 		try {
-			const response = await fetch('http://localhost:3001/calculate-possibilities', {
+			const response = await fetch('http://localhost:3001/af_scores', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

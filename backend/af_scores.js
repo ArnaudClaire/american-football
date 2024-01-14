@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.post('/calculate-possibilities', (req, res) => {
+app.post('/af_scores', (req, res) => {
   console.log(req.body);
   const { teamX, teamY } = req.body;
   const possibilities = calculatePossibilities(teamX, teamY);
